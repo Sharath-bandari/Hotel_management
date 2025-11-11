@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Wireframe Bootstrap + Images</title>
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        .placeholder-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .restaurant-box {
+            background: #f8f8f8;
+            padding: 25px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ✅ NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger px-3">
+    <a class="navbar-brand fw-bold" href="#">Hotel</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Rooms</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Food</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Admin</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Bookings</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ✅ HERO SECTION WITH IMAGE -->
+<section class="text-center py-5 bg-white border-bottom">
+    
+    <!-- Hero Image -->
+    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
+         class="img-fluid rounded mb-4"
+         style="max-height: 380px; object-fit: cover; width: 100%;">
+
+    <h1 class="display-5 fw-bold">Find the best deals</h1>
+    <p class="lead">for your next trip</p>
+
+    <!-- Search Section -->
+    <div class="container mt-4">
+        <div class="row g-3 justify-content-center">
+
+            <div class="col-md-3">
+                <label class="form-label">Check In Date</label>
+                <input type="date" class="form-control">
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label">Check Out Date</label>
+                <input type="date" class="form-control">
+            </div>
+
+            <div class="col-md-2">
+                <label class="form-label">Guests</label>
+                <select class="form-select">
+                    <option>1</option><option>2</option><option>3</option>
+                </select>
+            </div>
+
+            <div class="col-md-2 d-flex align-items-end">
+                <button class="btn btn-dark w-100">Check</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ✅ ADMIN SECTION WITH ROOM IMAGES -->
+<section class="container py-5">
+    <h2 class="fw-bold">Admin</h2>
+
+    <div class="d-flex gap-4 mt-3">
+        <span>Dashboard</span>
+        <span>Bookings</span>
+        <span>Rooms</span>
+        <span>Users</span>
+    </div>
+
+    <h3 class="mt-4">Today's best deals</h3>
+
+    <div class="row mt-3 g-4">
+
+        <div class="col-md-3">
+            <div class="card p-2">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                     class="placeholder-img">
+                <div class="card-body text-center">
+                    <p>Premium<br>$ — /day<br><b>Bronze Suite</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card p-2">
+                <img src="https://imgs.search.brave.com/hgDvmSSe1xm9VM5Q6qiet1Hr4ROuq9xy2d1bEpKCxJg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc2ltcGxvdGVs/LmNvbS9zaW1wbG90/ZWwvaW1hZ2UvdXBs/b2FkL3dfNTAwMCxo/XzMzMzMveF80ODAs/eV8wLHdfNDgwMCxo/XzM4NDAscl8wLGNf/Y3JvcCxxXzgwLGZs/X3Byb2dyZXNzaXZl/L3dfOTAwLGZfYXV0/byxjX2ZpdC90aGUt/YnJpc3RvbC1ob3Rl/bC1ndXJnYW9uL1By/ZW1pdW1fUm9vbXNf/YXRfVGhlX0JyaXN0/b2xfSG90ZWxfR3Vy/Z2FvbixfUm9vbXNf/TmVhcl9TaWthbmRl/cnB1cl9NZXRyb19T/dGF0aW9u"
+                     class="placeholder-img">
+                <div class="card-body text-center">
+                    <p>Premium<br>$ — /day<br><b>Silver Suite</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card p-2">
+                <img src="https://imgs.search.brave.com/tl7fuqD3iUM7HgAjrSD178LWeeR9cnyReHa5YmDqUNY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc2ltcGxvdGVs/LmNvbS9zaW1wbG90/ZWwvaW1hZ2UvdXBs/b2FkL3dfNTAwMCxo/XzMzMzMveF8wLHlf/MjYwLHdfNTAwMCxo/XzI4MTMscl8wLGNf/Y3JvcCxxXzgwLGZs/X3Byb2dyZXNzaXZl/L3dfOTAwLGZfYXV0/byxjX2ZpdC90aGUt/YnJpc3RvbC1ob3Rl/bC1ndXJnYW9uL1By/ZW1pdW1fUm9vbXNf/YXRfVGhlX0JyaXN0/b2xfSG90ZWxfR3Vy/Z2FvbixfUm9vbXNf/TmVhcl9TaWthbmRl/cnB1cl9NZXRyb19T/dGF0aW9uXzE"
+                     class="placeholder-img">
+                <div class="card-body text-center">
+                    <p>Premium<br>$ — /day<br><b>Gold Suite</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card p-2">
+                <img src="https://images.unsplash.com/photo-1502672023488-70e25813eb80"
+                     class="placeholder-img">
+                <div class="card-body text-center">
+                    <p>Diamond<br>$ — /day<br><b>Diamond Suite</b></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ✅ ACCOMMODATION IMAGES -->
+<section class="container py-5">
+    <h2 class="fw-bold">Choose the perfect accommodation</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+
+    <div class="row g-4 mt-2">
+        <div class="col-md-3">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
+                 class="placeholder-img">
+        </div>
+        <div class="col-md-3">
+            <img src="https://imgs.search.brave.com/E7YrXYeup2MAPLFDpKCuqPSwUu7mjzodCpDGdlJAM_o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jYWNo/ZS5tYXJyaW90dC5j/b20vaXMvaW1hZ2Uv/bWFycmlvdHRzN3By/b2QvcGR0LVRoZS1S/aXR6LUNhcmx0b24t/UGF0aW8tNzI1MjM1/MDc1NTc0OTA4OkNs/YXNzaWMtSG9y"
+                 class="placeholder-img">
+        </div>
+        <div class="col-md-3">
+            <img src="https://imgs.search.brave.com/o18xwufLnCTFCLTY-fHKUJE6KDjeL8s8f_8nVuKGl_M/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/MjEwZjI5NDg3Mjkw/M2UxN2ZkZWZkMTkv/NjIzMGMyYjdiZjAw/NzU3YTdmMGVhYzQ4/X1ByZW1pdW0tUm9v/bXMtQ2Fyb3VzZWxf/MDEuanBn"
+                 class="placeholder-img">
+        </div>
+        <div class="col-md-3">
+            <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5"
+                 class="placeholder-img">
+        </div>
+    </div>
+</section>
+
+
+<!-- ✅ RESTAURANT MANAGEMENT SECTION -->
+<section class="container py-5">
+    <h2 class="fw-bold">Welcome to Restaurant Management System</h2>
+    <p>Hotel rooms have everything you need for a pleasant stay...</p>
+
+    <div class="row mt-4 g-4">
+
+        <!-- User Register -->
+        <div class="col-md-4">
+            <div class="restaurant-box">
+                <h4>User Register</h4>
+
+                <label class="form-label mt-2">Full Name</label>
+                <input type="text" class="form-control">
+
+                <label class="form-label mt-2">User Name</label>
+                <input type="text" class="form-control">
+
+                <label class="form-label mt-2">Password</label>
+                <input type="password" class="form-control">
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div class="col-md-4">
+            <div class="restaurant-box">
+                <h4>Login</h4>
+
+                <label class="form-label mt-2">User Name</label>
+                <input type="text" class="form-control">
+
+                <label class="form-label mt-2">Password</label>
+                <input type="password" class="form-control">
+
+                <button class="btn btn-dark w-100 mt-3">Login</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
