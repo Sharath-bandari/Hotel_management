@@ -1,0 +1,76 @@
+<form style="
+  background: linear-gradient(135deg, #e3ffe7 0%, #d9e7ff 100%);
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #4b6cb7;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  color: #333;
+">
+
+  <h2 style="
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 26px;
+  ">Hotel Room Booking</h2>
+
+  <label for="name" style="
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+  ">Full Name:</label>
+
+  <input type="text" id="name" required style="
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  ">
+
+  <label for="room" style="
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+  ">Select Room:</label>
+
+  <select id="room" style="
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    margin-bottom: 25px;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+  ">
+    <option value="standard">Standard - 2000 Rupees</option>
+    <option value="deluxe">Deluxe - 3000 Rupees</option>
+    <option value="suite">Suite - 5000 Rupees</option>
+    <option value="presidential">Presidential Suite - 7000 Rupees</option>
+  </select>
+
+  <button type="submit" style="
+    width: 100%;
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  "
+  onmouseover="this.style.background='linear-gradient(90deg,#56ab2f,#a8e063)'"
+  onmouseout="this.style.background='linear-gradient(90deg, #4b6cb7, #182848)'"
+  >Book Now</button>
+
+</form>
